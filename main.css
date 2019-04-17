@@ -85,10 +85,28 @@ h1, .subhead{
     z-index: -1;
 }
 
+.blue-container .print-head{
+    transform: skewY(2deg);
+    padding: 20px;
+}
+
 .blue-container ul{
     transform: skewY(2deg);
 }
-
+.blue-container ul li{
+    padding:10px;
+}
+.blue-container ul li .card{
+    position: relative;
+    width: inherit;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    background: #fff;
+}
 .blue-container ul li p{
     padding: 0 .5em;
 }
@@ -242,10 +260,10 @@ nav ul li a:hover{
         align-items: center;
     }
 
+
     .blue-container ul li p {
         padding: 0 .8em;
     }
-
     .gray-container ul{
         display: flex;
     }
@@ -320,21 +338,6 @@ nav ul li a:hover{
         background-color: inherit;
     }
 
-    .scroll{
-        width: 20px;
-        height: auto;
-        animation: move 1s infinite alternate;
-    }
-
-    @keyframes move {
-        0%{
-            transform: translateY(0px);
-        }
-        100%{
-            transform: translateY(20px);
-        }
-    }
-}
 
 @media only screen and (min-width: 1600px){
 
