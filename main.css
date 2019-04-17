@@ -20,6 +20,7 @@ ul{
 
 .logo{
     width: 130px;
+    padding-bottom: 20px
 }
 
 .hide-mobile {
@@ -36,9 +37,9 @@ header{
     justify-content: space-between;
 }
 
-.server{
-    width: 70%;
-    margin:2em auto 2em 25%
+.robot{
+    width: 50%;
+    height: auto;
 }
 
 h1, .subhead{
@@ -126,7 +127,7 @@ h2{
 
 .head-test{
     margin: 0;
-    padding-bottom: 1.6em;
+    padding-top: 1.6em;
 }
 
 .cta{
@@ -150,36 +151,8 @@ h2{
     background: #3d444a;  /* fallback for old browsers */
     color: #fff;
     padding: 3em 0;
-    border-top-right-radius: 40px;
-    transform: skewY(2deg);
 }
 
-.footer-container .container{
-    transform: skewY(-2deg);
-}
-
-.footer-container:before{
-    content: "";
-    width:40px;
-    height:40px;
-    background-color: #3d444a;
-    position: absolute;
-    top:-39px;
-    left: 0;
-    z-index: -2;
-}
-
-.footer-container:after{
-    content: "";
-    width: 80px;
-    height: 80px;
-    background-color: #fff;
-    position: absolute;
-    z-index: -1;
-    top: -80px;
-    left: 0;
-    border-radius: 50%
-}
 
 .footer-title{
     text-decoration: none;
@@ -319,5 +292,74 @@ nav ul li a:hover{
 
     .hide-desktop{
         display: none;
+    }
+
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li {
+
+        float: left;
+
+    }
+
+    nav ul li a{
+        color: black;
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 2em;
+    }
+
+    nav ul li a:hover{
+        background-color: inherit;
+    }
+
+    .scroll{
+        width: 20px;
+        height: auto;
+        animation: move 1s infinite alternate;
+    }
+
+    @keyframes move {
+        0%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(20px);
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px){
+
+    .robot{
+        width: 40%;
+        margin: 5em auto 4em 15%;
+    }
+    .container{
+        width: 70%
+    }
+
+    .blue-container{
+        padding: 7em 0 2em;
+    }
+
+    .blue-container ul li p, blockquote{
+
+        font-size: 1.3em;
+    }
+
+    .gray-container{
+        padding: 6em 0 4em;
+    }
+
+    .blue-container img{
+        width: 15%;
     }
 }
